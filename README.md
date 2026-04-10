@@ -203,6 +203,7 @@ Use PostgreSQL database for resume storage
 Add authentication system for recruiters
 Add background task queue (Celery / Redis)
 Improve ranking with fine-tuned transformer model
+
 💼 Project Summary
 
 This system is an AI-powered resume ranking engine that uses semantic understanding (transformers) to match candidates with job descriptions more accurately than traditional keyword-based systems.
