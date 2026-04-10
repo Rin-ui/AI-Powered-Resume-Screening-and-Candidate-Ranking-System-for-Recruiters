@@ -1,5 +1,5 @@
 # AI-Powered-Resume-Screening-and-Candidate-Ranking-System-for-Recruiters
-
+Link Of project after deployment : https://ai-resume-ranking-app.onrender.com
 ## 🔥 Overview
 This is an advanced **FastAPI-based Resume Screening System** that automatically ranks candidates based on a Job Description (JD) using **semantic similarity (Sentence Transformers)**, skill matching, and heuristic scoring.
 
@@ -134,67 +134,113 @@ Color-coded scores:
 🟡 Medium (40–60)
 🔴 Low (<40)
 "View Resume" button per candidate
+##Create 3 files in Github
+AI-Powered-Resume-Screening-and-Candidate-Ranking-System-for-Recruiters/
+│
+├── app.py
+├── backend_logic.py
+├── fastapi_wrap_backend.py
+├── requirements.txt   ✅ (you create)
+├── runtime.txt        ✅ (you create)
+├── start.sh           ✅ (you create)
+├── README.md
+└── .gitignore
+🌸 STEP-BY-STEP (do exactly this)
+✅ Step 1 — Create files locally
 
-##🚀 Deployment on Render
-1️⃣ Push Code to GitHub
+Inside your project folder:
 
-Make sure your repo contains:
+1. Create requirements.txt
 
-app.py
-requirements.txt
-start.sh
-2️⃣ Create Render Account
-Go to: https://render.com
-Login with GitHub
-3️⃣ Create Web Service
-Click New → Web Service
-Connect your GitHub repository
-4️⃣ Configure Settings
-
-Name:
-
-ai-resume-ranking-app
-
-Environment:
-
-Python 3
-
-Build Command:
-
-pip install -r requirements.txt
-
-Start Command:
-
-bash start.sh
-
-Root Directory:
-
-(leave empty)
-5️⃣ start.sh file
-
-Create a file named:
-
-start.sh
-
-Add:
-
-uvicorn app:app --host 0.0.0.0 --port 10000
-6️⃣ Add Requirements
-
-Make sure requirements.txt includes:
+👉 Right click → New file → paste:
 
 fastapi
 uvicorn
 pdfplumber
 python-docx
-sentence-transformers
 scikit-learn
+sentence-transformers
 torch
-7️⃣ Deploy
-Click Create Web Service
-Wait for build to complete
-Get live URL like:
-https://your-app-name.onrender.com
+python-multipart
+
+2. Create runtime.txt
+python-3.10.0
+
+3. Create start.sh
+uvicorn app:app --host 0.0.0.0 --port 10000
+##Deploy on Render
+
+Go to 👉 https://render.com
+
+Then:
+
+Click New +
+Choose Web Service --> Choose one repo click
+Connect your GitHub repo
+👉 AI-Powered-Resume-Screening-and-Candidate-Ranking-System-for-Recruiters
+STEP 1 — Select your repo
+
+👉 Click this:
+
+Rin-ui / AI-Powered-Resume-Screening-and-Candidate-Ranking-System-for-Recruiters
+🌸 STEP 2 — Choose service type
+
+Render will ask:
+
+👉 Select Web Service
+
+🌸 STEP 3 — Fill configuration (VERY IMPORTANT)
+
+You’ll now see a form — fill it like this:
+
+🔹 Name
+ai-resume-ranking-app
+🔹 Region
+
+👉 Leave default (or closest to you)
+
+🔹 Branch
+main
+🔹 Runtime / Environment
+
+👉 Select:
+
+Python 3
+🔹 Build Command
+
+Paste:
+
+pip install -r requirements.txt
+🔹 Start Command
+
+Paste:
+
+bash start.sh
+🌸 STEP 4 — Advanced settings (skip)
+
+👉 Don’t change anything else
+(default is fine)
+
+🌸 STEP 5 — Deploy
+
+👉 Click:
+
+Create Web Service
+⏳ STEP 6 — Wait
+First deploy takes 5–10 minutes
+You’ll see logs running
+
+👉 Look for:
+
+==> Your service is live 🎉
+🌸 STEP 7 — Open your app
+
+You’ll get a link like:
+
+https://resume-ranking-app.onrender.com
+
+👉 Click it → your dashboard opens 💙
+
 ⚠️ Limitations
 First deployment may take time due to model loading
 Large ZIP files may slow processing
