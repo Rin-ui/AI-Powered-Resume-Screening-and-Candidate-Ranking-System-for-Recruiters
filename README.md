@@ -153,7 +153,7 @@ Connect your GitHub repository
 
 Name:
 
-resume-ranking-system
+ai-resume-ranking-app
 
 Environment:
 
