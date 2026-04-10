@@ -105,7 +105,7 @@ final_score = (
     0.1 * experience_score
 )
 
-🌐 API Endpoints
+##🌐 API Endpoints
 🔹 Home Page
 GET /
 Loads interactive resume ranking dashboard
@@ -123,7 +123,8 @@ Ranked list of resumes with scores
 🔹 View Resume
 GET /view/{filename}
 Opens resume directly in browser
-🎨 Frontend Features
+
+##🎨 Frontend Features
 JD input box
 ZIP upload input
 "Process Resumes" button
@@ -133,7 +134,8 @@ Color-coded scores:
 🟡 Medium (40–60)
 🔴 Low (<40)
 "View Resume" button per candidate
-🚀 Deployment on Render
+
+##🚀 Deployment on Render
 1️⃣ Push Code to GitHub
 
 Make sure your repo contains:
